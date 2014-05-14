@@ -1,11 +1,17 @@
 {
-	"name":"invoicing",
-	"version":"git",
-	"deps":[],
-	"tables":[
-		"crm_addrs",
-		"crm_customers",
-		"crm_groups",
-		"link_crm_customers_crm_groups"
-	]	
+  "name":"invoicing",
+  "version":"git",
+  "deps":[
+    
+  ],
+  "tables":[
+    "inv_invoices",
+    "inv_payments",
+    "inv_positions"
+  ],
+  "tableRevs":{
+    "inv_invoices":0,
+    "inv_payments":0,
+    "inv_positions":0
+  }
 }
