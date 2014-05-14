@@ -1,0 +1,20 @@
+CREATE TABLE `inv_positions` (
+  `tenant` int(11) NOT NULL DEFAULT '1',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `inv_invoices_id` int(11) NOT NULL,
+  `ts` int(11) NOT NULL,
+  `inv_order` int(11) NOT NULL,
+  `sku` text NOT NULL,
+  `shortdesc` text NOT NULL,
+  `longdesc` text NOT NULL,
+  `price` bigint(20) NOT NULL,
+  `currency` int(11) NOT NULL DEFAULT '1',
+  `amount` int(11) NOT NULL,
+  `unit` int(11) NOT NULL,
+  `vat_percentage` int(11) NOT NULL,
+  `creator` int(11) NOT NULL,
+  `last_editor` int(11) NOT NULL,
+  `create_time` bigint(20) NOT NULL,
+  `modify_time` bigint(20) NOT NULL,
+  PRIMARY KEY (`tenant`,`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
